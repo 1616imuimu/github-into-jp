@@ -1,0 +1,12 @@
+{
+    "name": "Translator GitHub JP",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "GitHubの主要な項目を日本語に翻訳します",
+    "content_scripts": [
+        {
+          "matches": ["https://github.com/*"],
+          "js": ["tl_header.js"]
+        }
+    ]
+}
