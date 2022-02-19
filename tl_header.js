@@ -1,3 +1,6 @@
+function tl_search(el){
+    el.placeholder = el.placeholder.replace(/search or jump to…/i, "検索またはリポジトリへ移動");
+}
 function tl_pr(el){
     el.textContent = el.textContent.replace(/pull requests/i, "プルリクエスト");
 }
@@ -15,8 +18,11 @@ try {
     let body = document.body
     if (!body.getElementsByClassName('logged-in')) {
         ;
-    }else{   
-        let header_nav = document.querySelector("header nav")
+    }else{
+        let header = document.querySelector("header")
+        tl_search(header.querySelector(".header-search-input"))
+
+        let header_nav = header.querySelector("nav")
         tl_pr(header_nav.querySelector("a[href='/pulls']"))
         tl_issue(header_nav.querySelector("a[href='/issues']"))
         tl_marketplace(header_nav.querySelector("a[href='/marketplace']"))
