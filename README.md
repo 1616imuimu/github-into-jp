@@ -1,1 +1,1 @@
-# translate_JP
+# github-into-jp

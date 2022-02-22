@@ -1,5 +1,5 @@
 {
-    "name": "Translator GitHub JP",
+    "name": "GitHub into JP",
     "version": "0.1",
     "manifest_version": 3,
     "description": "GitHubの主要な項目を日本語に翻訳します",
